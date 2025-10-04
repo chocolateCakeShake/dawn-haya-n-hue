@@ -103,9 +103,10 @@
     {%- endunless -%}
 
     {{ 'template-giftcard.css' | asset_url | stylesheet_tag }}
+    {{ 'brand-styles.css' | asset_url | stylesheet_tag }}
   </head>
 
-  <body class="gradient gift-card">
+  <body class="gradient gift-card brand-typography">
     <header>
       <div class="gift-card__price">
         <h1>

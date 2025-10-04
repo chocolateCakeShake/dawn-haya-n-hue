@@ -1,0 +1,100 @@
+/* 
+ * Haya & Hue Brand Styles
+ * Custom brand styles to complement the theme settings
+ */
+
+/* Google Fonts Import for brand fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Montserrat:wght@400;600;700;800&display=swap');
+
+/* Brand font variables and overrides */
+:root {
+  /* Playfair Display for headings */
+  --font-heading-family-brand: 'Playfair Display', serif;
+  
+  /* Montserrat for body text */
+  --font-body-family-brand: 'Montserrat', sans-serif;
+  
+  /* Enhanced brand styling variables */
+  --brand-elegant-spacing: 0.02em;
+  --brand-luxury-shadow: 0 2px 8px rgba(43, 28, 20, 0.1);
+}
+
+/* Apply brand fonts when system fonts are not used */
+.brand-typography h1, 
+.brand-typography h2, 
+.brand-typography h3, 
+.brand-typography h4, 
+.brand-typography h5, 
+.brand-typography h6,
+.brand-typography .h0,
+.brand-typography .h1,
+.brand-typography .h2,
+.brand-typography .h3,
+.brand-typography .h4,
+.brand-typography .h5 {
+  font-family: var(--font-heading-family-brand) !important;
+  letter-spacing: var(--brand-elegant-spacing);
+}
+
+.brand-typography {
+  font-family: var(--font-body-family-brand) !important;
+}
+
+/* Logo area styling */
+.header__heading-logo .link {
+  font-family: var(--font-heading-family-brand);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+/* Enhanced button styling for brand */
+.btn--brand {
+  font-family: var(--font-body-family-brand);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border-radius: 2px;
+  box-shadow: var(--brand-luxury-shadow);
+  transition: all 0.3s ease;
+}
+
+.btn--brand:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(43, 28, 20, 0.15);
+}
+
+/* Brand-specific typography enhancements */
+.brand-elegant-text {
+  font-family: var(--font-heading-family-brand);
+  font-weight: 600;
+  letter-spacing: var(--brand-elegant-spacing);
+}
+
+.brand-body-text {
+  font-family: var(--font-body-family-brand);
+  line-height: 1.6;
+  letter-spacing: 0.01em;
+}
+
+/* Elegant spacing for brand elements */
+.brand-section {
+  padding: 2rem 0;
+}
+
+@media screen and (min-width: 750px) {
+  .brand-section {
+    padding: 3rem 0;
+  }
+}
+
+/* Enhanced card styling with brand aesthetic */
+.card--brand {
+  border-radius: 4px;
+  box-shadow: var(--brand-luxury-shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card--brand:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(43, 28, 20, 0.12);
+}
